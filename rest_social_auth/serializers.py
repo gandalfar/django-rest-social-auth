@@ -9,7 +9,7 @@ from rest_framework.authtoken.models import Token
 class OAuth2InputSerializer(serializers.Serializer):
 
     provider = serializers.CharField(required=False)
-    code = serializers.CharField()
+    code = serializers.CharField(required=False)
     redirect_uri = serializers.CharField(required=False)
 
 
